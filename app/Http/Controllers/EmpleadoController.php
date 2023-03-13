@@ -94,6 +94,8 @@ class EmpleadoController extends Controller
         if(Storage::delete('public/'.$empleado->Foto))
         {
             Empleado::destroy($id);
+
+            
         }
      
         return redirect('empleado');
